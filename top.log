@@ -1,0 +1,325 @@
+# vsim -vopt work.top -voptargs="+acc=npr" -assertdebug -l top.log -sva -coverage -c -do "log -r /*; add wave -r /*; coverage save -onexit -assert -directive -cvg -codeAll top_coverage.ucdb; run -all; exit" -wlf top_waveform.wlf 
+# Start time: 09:05:32 on Aug 03,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ram_generator.sv(23): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.ram_if(fast)
+# Loading work.ram_pkg(fast)
+# Loading work.top(fast)
+# Loading work.ram_if(fast)
+# Loading work.RAM(fast)
+# ** Warning: (vsim-8441) ram_driver.sv(50): Clocking block output vif.drv_cb.address is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(49): Clocking block output vif.drv_cb.data_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(48): Clocking block output vif.drv_cb.read_enb is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(47): Clocking block output vif.drv_cb.write_enb is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(50): Clocking block output vif.drv_cb.address is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(48): Clocking block output vif.drv_cb.read_enb is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(47): Clocking block output vif.drv_cb.write_enb is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(49): Clocking block output vif.drv_cb.data_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(50): Clocking block output vif.drv_cb.address is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(48): Clocking block output vif.drv_cb.read_enb is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(47): Clocking block output vif.drv_cb.write_enb is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(49): Clocking block output vif.drv_cb.data_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(50): Clocking block output vif.drv_cb.address is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(49): Clocking block output vif.drv_cb.data_in is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(48): Clocking block output vif.drv_cb.read_enb is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# ** Warning: (vsim-8441) ram_driver.sv(47): Clocking block output vif.drv_cb.write_enb is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /ram_pkg File: ram_pkg.sv
+# log -r /*
+#  add wave -r /*
+#  coverage save -onexit -assert -directive -cvg -codeAll top_coverage.ucdb
+#  run -all
+# GENERATOR Randomized transaction data_in=250,write_enb=0,read_enb=1,address= 9                   0
+# GENERATOR Randomized transaction data_in=205,write_enb=0,read_enb=1,address=16                   0
+# GENERATOR Randomized transaction data_in=175,write_enb=0,read_enb=1,address=28                   0
+# GENERATOR Randomized transaction data_in=241,write_enb=1,read_enb=0,address= 2                   0
+# GENERATOR Randomized transaction data_in= 25,write_enb=1,read_enb=0,address=16                   0
+# GENERATOR Randomized transaction data_in= 65,write_enb=1,read_enb=0,address=26                   0
+# GENERATOR Randomized transaction data_in= 59,write_enb=0,read_enb=1,address=11                   0
+# GENERATOR Randomized transaction data_in= 56,write_enb=0,read_enb=1,address=13                   0
+# GENERATOR Randomized transaction data_in=251,write_enb=0,read_enb=1,address=28                   0
+# GENERATOR Randomized transaction data_in= 68,write_enb=1,read_enb=0,address=18                   0
+# GENERATOR Randomized transaction data_in= 58,write_enb=1,read_enb=0,address= 3                   0
+# GENERATOR Randomized transaction data_in= 53,write_enb=1,read_enb=0,address= 6                   0
+# GENERATOR Randomized transaction data_in= 17,write_enb=0,read_enb=1,address=21                   0
+# GENERATOR Randomized transaction data_in=231,write_enb=1,read_enb=0,address= 3                   0
+# GENERATOR Randomized transaction data_in=129,write_enb=0,read_enb=1,address= 5                   0
+# GENERATOR Randomized transaction data_in=242,write_enb=0,read_enb=1,address=21                   0
+# GENERATOR Randomized transaction data_in=187,write_enb=0,read_enb=1,address= 2                   0
+# GENERATOR Randomized transaction data_in=216,write_enb=0,read_enb=1,address=15                   0
+# GENERATOR Randomized transaction data_in= 51,write_enb=1,read_enb=0,address=16                   0
+# GENERATOR Randomized transaction data_in=  7,write_enb=0,read_enb=1,address=13                   0
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in=250,write_enb=0,read_enb=1,address= 9                  90
+# INPUT FUNCTIONAL COVERAGE = 65
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                  90
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# ** Warning: (vsim-3829) ram_reference_model.sv(38): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=  0                 110
+# ** Warning: (vsim-3829) ram_reference_model.sv(40): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 110
+############SCOREBOARD REFdata_out=0, ADDRESS= 9###############                 110
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS= 9!!!!!!!!!!!!!!                 110
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 110
+# DATA MATCH SUCCESSFUL MATCH=          1
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in=205,write_enb=0,read_enb=1,address=16                 130
+# INPUT FUNCTIONAL COVERAGE = 65
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 130
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# ** Warning: (vsim-3829) ram_reference_model.sv(38): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=  0                 150
+# ** Warning: (vsim-3829) ram_reference_model.sv(40): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 150
+############SCOREBOARD REFdata_out=0, ADDRESS=16###############                 150
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=16!!!!!!!!!!!!!!                 150
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 150
+# DATA MATCH SUCCESSFUL MATCH=          2
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in=175,write_enb=0,read_enb=1,address=28                 170
+# INPUT FUNCTIONAL COVERAGE = 65
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 170
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# ** Warning: (vsim-3829) ram_reference_model.sv(38): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=  0                 190
+# ** Warning: (vsim-3829) ram_reference_model.sv(40): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 190
+############SCOREBOARD REFdata_out=0, ADDRESS=28###############                 190
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=28!!!!!!!!!!!!!!                 190
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 190
+# DATA MATCH SUCCESSFUL MATCH=          3
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in=241,write_enb=1,read_enb=0,address= 2                 210
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 210
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=241                 230
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 230
+############SCOREBOARD REFdata_out=0, ADDRESS= 2###############                 230
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS= 2!!!!!!!!!!!!!!                 230
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 230
+# DATA MATCH SUCCESSFUL MATCH=          4
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in= 25,write_enb=1,read_enb=0,address=16                 250
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 250
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]= 25                 270
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 270
+############SCOREBOARD REFdata_out=0, ADDRESS=16###############                 270
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=16!!!!!!!!!!!!!!                 270
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 270
+# DATA MATCH SUCCESSFUL MATCH=          5
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in= 65,write_enb=1,read_enb=0,address=26                 290
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 290
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]= 65                 310
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 310
+############SCOREBOARD REFdata_out=0, ADDRESS=26###############                 310
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=26!!!!!!!!!!!!!!                 310
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 310
+# DATA MATCH SUCCESSFUL MATCH=          6
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in= 59,write_enb=0,read_enb=1,address=11                 330
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 330
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# ** Warning: (vsim-3829) ram_reference_model.sv(38): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=  0                 350
+# ** Warning: (vsim-3829) ram_reference_model.sv(40): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 350
+############SCOREBOARD REFdata_out=0, ADDRESS=11###############                 350
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=11!!!!!!!!!!!!!!                 350
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 350
+# DATA MATCH SUCCESSFUL MATCH=          7
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in= 56,write_enb=0,read_enb=1,address=13                 370
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 370
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# ** Warning: (vsim-3829) ram_reference_model.sv(38): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=  0                 390
+# ** Warning: (vsim-3829) ram_reference_model.sv(40): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 390
+############SCOREBOARD REFdata_out=0, ADDRESS=13###############                 390
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=13!!!!!!!!!!!!!!                 390
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 390
+# DATA MATCH SUCCESSFUL MATCH=          8
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in=251,write_enb=0,read_enb=1,address=28                 410
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 410
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# ** Warning: (vsim-3829) ram_reference_model.sv(38): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=  0                 430
+# ** Warning: (vsim-3829) ram_reference_model.sv(40): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 430
+############SCOREBOARD REFdata_out=0, ADDRESS=28###############                 430
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=28!!!!!!!!!!!!!!                 430
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 430
+# DATA MATCH SUCCESSFUL MATCH=          9
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in= 68,write_enb=1,read_enb=0,address=18                 450
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 450
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]= 68                 470
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 470
+############SCOREBOARD REFdata_out=0, ADDRESS=18###############                 470
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=18!!!!!!!!!!!!!!                 470
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 470
+# DATA MATCH SUCCESSFUL MATCH=         10
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in= 58,write_enb=1,read_enb=0,address= 3                 490
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 490
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]= 58                 510
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 510
+############SCOREBOARD REFdata_out=0, ADDRESS= 3###############                 510
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS= 3!!!!!!!!!!!!!!                 510
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 510
+# DATA MATCH SUCCESSFUL MATCH=         11
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in= 53,write_enb=1,read_enb=0,address= 6                 530
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 530
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]= 53                 550
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 550
+############SCOREBOARD REFdata_out=0, ADDRESS= 6###############                 550
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS= 6!!!!!!!!!!!!!!                 550
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 550
+# DATA MATCH SUCCESSFUL MATCH=         12
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in= 17,write_enb=0,read_enb=1,address=21                 570
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 570
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# ** Warning: (vsim-3829) ram_reference_model.sv(38): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=  0                 590
+# ** Warning: (vsim-3829) ram_reference_model.sv(40): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 590
+############SCOREBOARD REFdata_out=0, ADDRESS=21###############                 590
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=21!!!!!!!!!!!!!!                 590
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 590
+# DATA MATCH SUCCESSFUL MATCH=         13
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in=231,write_enb=1,read_enb=0,address= 3                 610
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 610
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=231                 630
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 630
+############SCOREBOARD REFdata_out=0, ADDRESS= 3###############                 630
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS= 3!!!!!!!!!!!!!!                 630
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 630
+# DATA MATCH SUCCESSFUL MATCH=         14
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in=129,write_enb=0,read_enb=1,address= 5                 650
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 650
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# ** Warning: (vsim-3829) ram_reference_model.sv(38): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=  0                 670
+# ** Warning: (vsim-3829) ram_reference_model.sv(40): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 670
+############SCOREBOARD REFdata_out=0, ADDRESS= 5###############                 670
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS= 5!!!!!!!!!!!!!!                 670
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 670
+# DATA MATCH SUCCESSFUL MATCH=         15
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in=242,write_enb=0,read_enb=1,address=21                 690
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 690
+# OUTPUT FUNCTIONAL COVERAGE = 0
+# ** Warning: (vsim-3829) ram_reference_model.sv(38): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=  0                 710
+# ** Warning: (vsim-3829) ram_reference_model.sv(40): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 710
+############SCOREBOARD REFdata_out=0, ADDRESS=21###############                 710
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=21!!!!!!!!!!!!!!                 710
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 710
+# DATA MATCH SUCCESSFUL MATCH=         16
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in=187,write_enb=0,read_enb=1,address= 2                 730
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=241                 730
+# OUTPUT FUNCTIONAL COVERAGE = 1
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=241                 750
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=241                 750
+############SCOREBOARD REFdata_out=241, ADDRESS= 2###############                 750
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=241,  ADDRESS= 2!!!!!!!!!!!!!!                 750
+# SCOREBOARD REFdata_out=241, MONdata_out=241                 750
+# DATA MATCH SUCCESSFUL MATCH=         17
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in=216,write_enb=0,read_enb=1,address=15                 770
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 770
+# OUTPUT FUNCTIONAL COVERAGE = 1
+# ** Warning: (vsim-3829) ram_reference_model.sv(38): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=  0                 790
+# ** Warning: (vsim-3829) ram_reference_model.sv(40): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 790
+############SCOREBOARD REFdata_out=0, ADDRESS=15###############                 790
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=15!!!!!!!!!!!!!!                 790
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 790
+# DATA MATCH SUCCESSFUL MATCH=         18
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in= 51,write_enb=1,read_enb=0,address=16                 810
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 810
+# OUTPUT FUNCTIONAL COVERAGE = 1
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]= 51                 830
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 830
+############SCOREBOARD REFdata_out=0, ADDRESS=16###############                 830
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=16!!!!!!!!!!!!!!                 830
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 830
+# DATA MATCH SUCCESSFUL MATCH=         19
+# DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in=  7,write_enb=0,read_enb=1,address=13                 850
+# INPUT FUNCTIONAL COVERAGE = 90
+# MONITOR PASSING THE DATA TO SCOREBOARD data_out=  0                 850
+# OUTPUT FUNCTIONAL COVERAGE = 1
+# ** Warning: (vsim-3829) ram_reference_model.sv(38): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA IN MEMORY MEM[ADDRESS]=  0                 870
+# ** Warning: (vsim-3829) ram_reference_model.sv(40): Non-existent associative array entry. Returning default value.
+# REFERENCE MODEL DATA OUT FROM MEMORY data_out=  0                 870
+############SCOREBOARD REFdata_out=0, ADDRESS=13###############                 870
+# !!!!!!!!!!!!!SCOREBOARD MONdata_out=0,  ADDRESS=13!!!!!!!!!!!!!!                 870
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 870
+# DATA MATCH SUCCESSFUL MATCH=         20
+# SCOREBOARD REFdata_out=0, MONdata_out=0                 870
+# DATA MATCH SUCCESSFUL MATCH=         21
+# ** Note: $finish    : top.sv(49)
+#    Time: 870 ns  Iteration: 3  Instance: /top
+# Saving coverage database on exit...
+# End time: 09:05:33 on Aug 03,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 39
